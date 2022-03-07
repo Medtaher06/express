@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <%- include('../components/Head'); %>
+    <title>Home</title>
+</head>
+
+<body>
+    <%- include('../components/NavBar'); %>
+
+    <h1>
+        <%= simpleText %>
+    </h1>
+<ul>
+    <% users.forEach( function (v){ %>
+<li>
+<p><%= v.name %></p>
+</li>
+        <%   }); %>
+    </ul>
+</body>
+</html>
